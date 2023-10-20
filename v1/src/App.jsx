@@ -5,7 +5,7 @@ import HomeScreen from "./screens/HomeScreen";
 const App = () => {
   return (
     <>
-      <Header className="" />
+      <Header className="relative" />
       <div className="flex  border-3 border-cyan-800">
         <Sidebar className="border border-blue-600" />
         <div className=" w-[100%] border border-green-500">
