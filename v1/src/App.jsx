@@ -1,20 +1,18 @@
-import { Container } from "react-bootstrap";
-
-import Header from "./components/header/Header";
-import Sidebar from "./components/sidebar/Sidebar";
-import HomeScreen from "./screens/homeScreen/HomeScreen";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import HomeScreen from "./screens/HomeScreen";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <div className="app_container">
-        <Sidebar />
-        <Container fluid className="app__main">
+    <>
+      <Header className="" />
+      <div className="flex  border-3 border-cyan-800">
+        <Sidebar className="border border-blue-600" />
+        <div className=" w-[100%] border border-green-500">
           <HomeScreen />
-        </Container>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
