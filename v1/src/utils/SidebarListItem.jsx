@@ -6,7 +6,7 @@ const SidebarListItem = ({ children, text }) => {
     <>
       <li className="flex gap-4 items-center cursor-pointer hover:bg-[#F0F0F0] px-4 py-2 rounded-lg">
         {children}
-        <span className="capitalize">{text}</span>
+        <span className="capitalize hidden lg:block min-w-[10rem]">{text}</span>
       </li>{" "}
       {textLower === "subscriptions" && <hr className="text-black" />}
     </>

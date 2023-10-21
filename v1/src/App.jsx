@@ -1,14 +1,21 @@
+import { useState } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import HomeScreen from "./screens/HomeScreen";
 
 const App = () => {
+  const [isOpen, setOpen] = useState(true);
+
+  function handleToggleMenu() {
+    setOpen((open) => !open);
+  }
+
   return (
     <>
-      <Header className="relative" />
-      <div className="flex  border-3 border-cyan-800">
-        <Sidebar className="border border-blue-600" />
-        <div className=" w-[100%] border border-green-500">
+      <Header className="" onToggleMenu={handleToggleMenu} />
+      <div className="flex  border-3 border-cyan-800 ">
+        <Sidebar isOpen={isOpen} />
+        <div className=" w-[100%]">
           <HomeScreen />
         </div>
       </div>

@@ -2,11 +2,11 @@
 import CategoriesBar from "../components/CategoriesBar";
 import Video from "../components/Video";
 
-const HomeScreen = ({ className = "" }) => {
+const HomeScreen = () => {
   return (
-    <div className={`${className}  `}>
+    <div className={` container mx-auto border border-red-800 grid`}>
       <CategoriesBar />
-      <div className="">
+      <div className="grid grid-cols-3 gap-4 px-4 py-6 ">
         {[...new Array(20)].map((_, i) => (
           <div key={i}>
             <Video />

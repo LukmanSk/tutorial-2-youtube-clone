@@ -15,7 +15,7 @@ const sideList = [
 ];
 const SidebarList = () => {
   return (
-    <ul className="pl-2 w-[90%] grid gap-2">
+    <ul className="w-[90%] grid gap-2">
       {sideList.map((item) => (
         <SidebarListItem key={item.id} text={item.text}>
           {item.icon}

@@ -1,21 +1,14 @@
 /* eslint-disable react/prop-types */
-import { AiOutlineMenu } from "react-icons/ai";
+
 import SidebarList from "../utils/SidebarList";
 
-const Sidebar = ({ className = "" }) => {
+const Sidebar = ({ isOpen }) => {
   return (
-    <div className={`${className} absolute top-0 bg-white h-screen hidden `}>
-      <div className="col flex items-center gap-3 pl-2 py-5 px-20 border mb-3">
-        <AiOutlineMenu className="text-[28px]" />
-        <div className="w-[6.5rem]">
-          <img
-            className="w-full aspect-auto"
-            src="https://i.imgur.com/xt54wky.png"
-            alt="Youtube"
-          />
-        </div>
-      </div>
-      <div className="wrapper">
+    <div
+      className={`bg-white h-screen transition-all duration-[.3s] 
+      ${isOpen ? "" : "translate-x-[-100%]"}`}
+    >
+      <div className={`${isOpen ? "" : "hidden ease-out"} wrapper pt-4`}>
         <SidebarList />
       </div>
     </div>

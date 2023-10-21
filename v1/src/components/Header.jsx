@@ -4,12 +4,15 @@ import { AiOutlineVideoCameraAdd, AiOutlineMenu } from "react-icons/ai";
 import { GoSearch } from "react-icons/go";
 import { IoIosNotificationsOutline } from "react-icons/io";
 
-const Header = ({ className = "" }) => {
+const Header = ({ className = "", onToggleMenu }) => {
   return (
     <div className={`${className}`}>
-      <div className="container mx-auto py-2 px-4 flex lg:gap-[4rem] justify-between">
+      <div className="px-4 py-2  flex lg:gap-[4rem] justify-between">
         <div className="col flex items-center gap-6 ">
-          <AiOutlineMenu className="text-[28px] hidden md:block" />
+          <AiOutlineMenu
+            className="text-[28px] hidden md:block cursor-pointer"
+            onClick={onToggleMenu}
+          />
           <div className="w-[6.5rem]">
             <img
               className="w-full aspect-auto"
