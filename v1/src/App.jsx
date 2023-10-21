@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import HomeScreen from "./screens/HomeScreen";
+import LoginScreen from "./screens/LoginScreen";
 
 const App = () => {
   const [isOpen, setOpen] = useState(true);
@@ -12,13 +13,14 @@ const App = () => {
 
   return (
     <>
-      <Header className="" onToggleMenu={handleToggleMenu} />
+      {/* <Header className="" onToggleMenu={handleToggleMenu} />
       <div className="flex  border-3 border-cyan-800 ">
         <Sidebar isOpen={isOpen} />
         <div className=" w-[100%]">
           <HomeScreen />
         </div>
-      </div>
+      </div> */}
+      <LoginScreen />
     </>
   );
 };

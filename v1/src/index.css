@@ -19,7 +19,7 @@ body {
   font-family: "Roboto", "sans-serif";
 }
 
-.carousel {
+/* .carousel {
   display: grid;
   grid-auto-flow: column;
   scroll-behavior: auto;
@@ -27,7 +27,7 @@ body {
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-}
+} */
 .carousel::-webkit-scrollbar {
   display: none;
 }

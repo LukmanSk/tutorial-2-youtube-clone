@@ -21,10 +21,10 @@ const Video = () => {
             <img src={channelLogo} alt="" />
           </div>
         </div>
-        <div className="info">
-          <div className="title font-bold text-[16px]">
+        <div className="info ">
+          <p className="title font-bold text-[16px] ">
             why you NEED math for programming
-          </div>
+          </p>
           <div className="channelTitle">
             <p className="text-[14px] text-[#606060] flex items-center gap-2">
               Joma Tech
