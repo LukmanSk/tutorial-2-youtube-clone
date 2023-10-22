@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       <Header className="" onToggleMenu={handleToggleMenu} />
       <div className="flex  border-3 border-cyan-800 ">
         <Sidebar isOpen={isOpen} />
-        <div className=" w-[100%]">{children}</div>
+        <div className="w-[100%]">{children}</div>
       </div>
     </>
   );

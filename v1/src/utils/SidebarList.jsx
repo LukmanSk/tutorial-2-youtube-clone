@@ -24,7 +24,7 @@ const sideList = [
     text: "I don't know",
     icon: <FaRegFaceFrown className="text-[28px]" />,
   },
-  { id: 6, text: "Log Out", icon: <FiLogOut className="text-[28px]" /> },
+  { id: 7, text: "Log Out", icon: <FiLogOut className="text-[28px]" /> },
 ];
 const SidebarList = () => {
   const [selectedItem, setSelectedItem] = useState("home");

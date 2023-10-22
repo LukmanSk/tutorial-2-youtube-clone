@@ -1,6 +1,13 @@
 import React from "react";
+import { auth, provider } from "../firebase";
+import { signInWithPopup } from "firebase/auth";
 
 const LoginScreen = () => {
+  const handleSignin = () => {
+    signInWithPopup(auth, provider).then((data) => {
+      console.log(data);
+    });
+  };
   return (
     <div className="grid place-items-center h-screen ">
       <div
@@ -14,7 +21,10 @@ const LoginScreen = () => {
             alt=""
           />
         </div>
-        <button className="bg-[#606060] rounded-lg text-white py-2 px-10 mt-4 hover:bg-white hover:outline hover:outline-1 hover:outline-[#606060] hover:text-[black] transition-all duration-[.3s] ">
+        <button
+          onClick={handleSignin}
+          className="bg-[#606060] rounded-lg text-white py-2 px-10 mt-4 hover:bg-white hover:outline hover:outline-1 hover:outline-[#606060] hover:text-[black] transition-all duration-[.3s] "
+        >
           Login with Google
         </button>
       </div>

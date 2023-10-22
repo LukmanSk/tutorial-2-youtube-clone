@@ -10,7 +10,7 @@ const Header = ({ className = "", onToggleMenu }) => {
       <div className="px-4 py-2  flex lg:gap-[4rem] justify-between">
         <div className="col flex items-center gap-6 ">
           <AiOutlineMenu
-            className="text-[28px] hidden md:block cursor-pointer"
+            className="text-[28px] hidden sm:block cursor-pointer"
             onClick={onToggleMenu}
           />
           <div className="w-[6.5rem]">

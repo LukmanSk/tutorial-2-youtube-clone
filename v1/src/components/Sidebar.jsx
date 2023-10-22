@@ -5,7 +5,7 @@ import SidebarList from "../utils/SidebarList";
 const Sidebar = ({ isOpen }) => {
   return (
     <div
-      className={`bg-white h-screen transition-all duration-[.3s] 
+      className={`bg-white hidden sm:block h-screen transition-all duration-[.3s] 
       ${isOpen ? "" : "translate-x-[-100%]"}`}
     >
       <div className={`${isOpen ? "" : "hidden ease-out"} wrapper pt-4`}>
